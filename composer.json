@@ -1,0 +1,24 @@
+{
+    "name": "kingloui/cakephp-basekit-users",
+    "description": "CakeDC Users wrapper for BaseKit CakePHP Plugin",
+    "type": "cakephp-plugin",
+    "require": {
+        "php": ">=5.5.9",
+        "cakephp/cakephp": ">=3.3.2 <4.0.0",
+        "cakedc/users": "^3.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "KingLoui\\BaseKitUsers\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KingLoui\\BaseKitUsers\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    }
+}

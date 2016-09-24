@@ -1,6 +1,6 @@
 <?php
 
-namespace  KingLoui\BaseKit\Model\Table;
+namespace  KingLoui\BaseKitUsers\Model\Table;
 
 use CakeDC\Users\Model\Table\UsersTable as CakeDCUsersTable;
 

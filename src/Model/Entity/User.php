@@ -1,6 +1,6 @@
 <?php
 
-namespace  KingLoui\BaseKit\Model\Entity;
+namespace  KingLoui\BaseKitUsers\Model\Entity;
 
 use CakeDC\Users\Model\Entity\User as CakeDCUser;
 

@@ -1,3 +1,4 @@
+<?php $this->assign('title', 'User details'); ?>
 <?php
 $Users = ${$tableAlias};
 ?>

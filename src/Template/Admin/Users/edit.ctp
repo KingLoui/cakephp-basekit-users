@@ -1,3 +1,4 @@
+<?php $this->assign('title', 'Edit user'); ?>
 <?php
     $Users = ${$tableAlias};
 ?>
@@ -10,6 +11,7 @@
             echo $this->Form->input('email');
             echo $this->Form->input('first_name');
             echo $this->Form->input('last_name');
+            echo $this->Form->input('role');
             echo $this->Form->input('token');
             echo $this->Form->input('token_expires');
             echo $this->Form->input('api_token');

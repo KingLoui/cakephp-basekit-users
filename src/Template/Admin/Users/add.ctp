@@ -1,9 +1,7 @@
+<?php $this->assign('title', 'Add user'); ?>
 <div class="row">
     <div class="col-lg-12">
         <div class="ibox float-e-margins">
-            <div class="ibox-title">
-                <h5>Add User</h5>
-            </div>
             <div class="ibox-content">
                 <?= $this->Form->create(${$tableAlias}, ['align' => [
                         'sm' => [

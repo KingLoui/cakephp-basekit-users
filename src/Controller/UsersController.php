@@ -12,6 +12,7 @@ use CakeDC\Users\Controller\Traits\SocialTrait;
 use CakeDC\Users\Model\Table\UsersTable;
 use Cake\Core\Configure;
 use Cake\ORM\Table;
+use Cake\Event\Event;
 
 /**
  * Users Controller
@@ -25,4 +26,10 @@ class UsersController extends AppController
     use ReCaptchaTrait;
     use RegisterTrait;
     use SocialTrait;
+
+    public function beforeFilter(Event $event)
+    {
+        parent::beforeFilter($event);
+        $this->Auth->allow('logout');
+    }
 }

@@ -12,7 +12,7 @@ $config = [
 			'HeaderElement' => 'KingLoui/BaseKitUsers.adminbarheader',
 			'MenuItems' => [
 				'Users' => [
-						['uri' => '#', 'extras' => ['icon' => 'fa fa-user']],
+						['uri' => '/admin/users', 'extras' => ['icon' => 'fa fa-user']],
 						'List Users' => ['uri' => ['plugin' => 'KingLoui/BaseKitUsers','controller' => 'Users', 'action' => 'index']],
 						'Add User' => ['uri' => ['plugin' => 'KingLoui/BaseKitUsers','controller' => 'Users', 'action' => 'add']]
 				],

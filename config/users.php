@@ -5,7 +5,6 @@ use Cake\Routing\Router;
 
 $config = [
     'Users' => [
-        //Table used to manage users
         'table' => 'KingLoui/BaseKitUsers.Users'
     ],
     'Auth' => [
@@ -14,8 +13,12 @@ $config = [
             'controller' => 'Users',
             'action' => 'login',
             'prefix' => false
+        ],
+        'authorize' => [
+            'CakeDC/Users.SimpleRbac' => [
+                'autoload_config' => 'KingLoui/BaseKitUsers.permissions'
+            ]
         ]
     ]
 ];
 
-return $config;

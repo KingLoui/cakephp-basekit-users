@@ -16,7 +16,7 @@ $config = [
         ],
         'authorize' => [
             'CakeDC/Users.SimpleRbac' => [
-                'autoload_config' => 'KingLoui/BaseKitUsers.permissions'
+                'autoload_config' => 'KingLoui/BaseKitUsers.basekit/permissions'
             ]
         ]
     ]
